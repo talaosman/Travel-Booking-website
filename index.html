@@ -14,1037 +14,1128 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <style>
-            #login {
-                background-color: rgb(28, 28, 63);
-                border-radius: 10px;
-                color: white;
-                margin-top: 10%;
-                font-family: 'Times New Roman', serif;
-            }
-
-            .loginForm {
-                margin-left: 25%;
-                margin-top: 10%;
-                background-color: white;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                width: 50%;
-                height: 60%;
-            }
-
-            #username1 {
-                margin-left: 20%;
-                margin-top: 1%;
-                width: 50%;
-                border-radius: 10px;
-                border-color: rgb(28, 28, 63);
-            }
-
-            #password {
-                margin-left: 20%;
-                margin-top: 1%;
-                width: 50%;
-                border-radius: 10px;
-                border-color: rgb(28, 28, 63);
-            }
-
-            .label {
-                font-size: 20px;
-                font-family: 'Times New Roman', serif;
-                margin-left: 20%;
-            }
-
-            #loginForm {
-                margin-top: 10%;
-            }
-
-            #loginbtn {
-                background-color: rgb(28, 28, 63);
-                color: white;
-                border-radius: 10px;
-                margin-left: 40%;
-                border: 0px;
-                font-size: 20px;
-                width: 20%;
-                padding: 2px;
-            }
-
-            #h1 {
-                font-size: 55px;
-                padding-top: 70px;
-                padding-left: 120px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            #p {
-                font-size: 24px;
-                font-family: Arial, Helvetica, sans-serif;
-                padding-left: 170px;
-                padding-top: 20px;
-            }
-
-            #p2 {
-                background-color: rgb(28, 28, 63);
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
-                padding: 10px;
-                border-radius: 10px;
-                width: 90%;
-                margin: 50px;
-            }
-
-            .header {
-                height: 70px;
-                padding-left: 20px;
-                padding-right: 20px;
-                align-items: center;
-                border-bottom: 2px solid gray;
-            }
-
-            .labelheader {
-                color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-                padding: 10px 30px !important;
-                font-weight: bold;
-                cursor: pointer;
-                position: relative;
-                border: 1px #333 solid;
-                border-radius: 10px;
-                margin-left: 2% !important;
-                min-width: 180px !important;     /* ensures wider clickable area */
-            }
-
-            #Contacts {
-                color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-                padding: 10px 20px;
-                font-weight: bold;
-                cursor: pointer;
-                position: relative;
-                border: 1px #333 solid;
-                border-radius: 10px;
-            }
-            #Topdestination{
-                color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-              padding: 10 1px;
-                font-weight: bold;
-                cursor: pointer;
-                position: relative;
-                border: 1px #333 solid;
-                border-radius: 10px;
-                   min-width: 250px !important;     /* ensures wider clickable area */
-                 text-align: center;
-            }
-        #TravelPlanerBtn{
-             color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-                padding: 10 20px;
-                font-weight: bold;
-                cursor: pointer;
-                position: relative;
-                border: 1px #333 solid;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                min-width: 200px;     /* ensures wider clickable area */
-                 text-align: center;
-
-        }
-            .labelheader:hover {
-                background-color: rgb(28, 28, 63) !important;
-                color: white;
-            }
-
-            #Contacts:hover {
-                background-color: rgb(28, 28, 63) !important;
-                color: white;
-            }
-              #TravelPlanerBtn:hover {
-                  background-color: rgb(28, 28, 63) !important;
-                  color: white;
-              }
-            #Topdestination:hover{
-                background-color: rgb(28, 28, 63) !important;
-                color: white;
-            }
-
-            .hide {
-                display: none;
-            }
-
-            .img2-container {
-                position: relative;
-                display: inline-block;
-                margin: 40px;
-                margin-left: 10px auto;
-                margin-right: auto;
-                max-width: 80% !important;
-            }
-
-            .img2-container img {
-                width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
-
-            .img2-textbox {
-                position: absolute;
-                background-color: white;
-                color: rgb(28, 28, 63);
-                padding: 15px;
-                border-radius: 10px;
-                bottom: 50px;
-                left: 30px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 20px;
-
-            }
-
-            .carousel-inner img {
-                object-fit: cover;
-                width: 90%;
-                height: auto;
-
-            }
-
-            .carousel-inner {
-                margin-left: 5% !important;
-            }
-
-            .howdoesitwork {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: Arial, Helvetica, sans-serif;
-                margin-top: 30px;
-            }
-
-            .smallparags {
-                color: rgb(28, 28, 63);
-                display: flex;
-                justify-content: center;
-                justify-content: space-around;
-                align-items: center;
-                font-size: 20px;
-                padding: 20px;
-
-            }
-
-            .myTravelTable {
-                width: 80%;
-                margin-left: 10%;
-            }
-
-            .myTravelTable td {
-                padding: 20px;
-            }
-
-            #TravelPlaner {
-                padding: 15px;
-                font-size: 25px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                text-align: center;
-                border: 1px solid gray;
-            }
-
-            #td {
-                padding: 15px 0;
-                font-size: 20px;
-
-            }
-
-            #td:first-child {
-                width: 50% !important;
-            }
-
-            .TopDestinations {
-                margin-left: 300px;
-                margin-top: 50px;
-
-            }
-
-            .labelTopDestinations {
-                font-size: 50px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-            }
-
-            .containerdestinations {
-                text-align: center;
-
-            }
-
-            .containerdestinations img {
-                margin: 20px;
-                border-radius: 10px;
-            }
-
-            .containerdestinations img {
-                margin: 20px;
-                border-radius: 10px;
-                transition: transform 0.3s ease;
-            }
-
-            .containerdestinations img:hover {
-                transform: scale(1.1);
-            }
-
-            .imagecity {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .image-container {
-                position: relative;
-
-            }
-
-            .image-container img {
-                min-width: 300px;
-                max-width: 300px;
-                max-height: 400px;
-                height: auto;
-                display: block;
-            }
-
-            .image-label {
-                position: absolute;
-                top: 250px;
-                left: 105px;
-                color: white;
-                border-radius: 5px;
-                font-size: 60px;
-                font-weight: bold;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-
-            #searchforcity {
-                background-color: rgb(28, 28, 63);
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
-                padding: 8px;
-                border-radius: 10px;
-                width: 40%;
-                transition: background-color 0.1s ease, transform 0.1s ease;
-            }
-
-            #searchforcity:hover {
-                background-color: rgb(8, 8, 63);
-                transform: scale(1.05);/
-            }
-
-            #BookTrip {
-                background-color: rgb(28, 28, 63);
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
-                padding: 8px;
-                border-radius: 10px;
-                width: 60%;
-                transition: background-color 0.1s ease, transform 0.1s ease;
-            }
-
-            #BookTrip:hover {
-                background-color: rgb(8, 8, 63);
-                transform: scale(1.05);/
-            }
-
-            .PostACityLabel {
-                font-size: 50px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                position: absolute;
-                color: black;
-                font-weight: bold;
-                margin: 20px;
-                margin-left: 20%;
-            }
-
-            .form-container {
-                color: black;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin: 100px auto;
-                padding: 20px;
-                max-width: 600px;
-                width: 90%;
-                text-align: center;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                border-radius: 8px;
-                background-color: white;
-            }
-
-            #journeyForm {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            #journeyForm label {
-                font-weight: bold;
-                font-size: 18px;
-            }
-
-            #journeyForm input,
-            #journeyForm button {
-                padding: 10px;
-                font-size: 16px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                background-color: #f8f8f8;
-                width: calc(100% - 22px);
-            }
-
-            #journeyForm input[type="text"] {
-                height: 40px;
-            }
-
-            #journeyForm input[type="text"]:focus {
-                outline: none;
-                border-color: rgb(8, 8, 63);
-            }
-
-            #journeyForm button {
-                padding: 10px;
-                background: rgb(8, 8, 63);
-                color: white;
-                border: none;
-                cursor: pointer;
-                border-radius: 10px;
-                transition: background-color 0.3s;
-            }
-
-            #journeyForm button:hover {
-                background-color: rgb(28, 28, 63);
-            }
-
-            .posted-blogs {
-                max-width: 80%;
-                width: 100%;
-                margin-left: 10%;
-                margin-top: -40px;
-            }
-
-            .posted-blogs h2 {
-                text-align: center;
-                font-size: 24px;
-                margin-bottom: 15px;
-            }
-
-            .posted-blogs div {
-                background: white;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                padding: 9px;
-                margin-bottom: 15px;
-                border-radius: 8px;
-                box-shadow: 0px 0px 10px rgb(5, 5, 5);
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                flex-wrap: wrap;
-            }
-
-            .posted-blogs img {
-                width: 200px;
-                height: 200px;
-                border-radius: 4px;
-                margin-right: 20px;
-                margin-left: 30px;
-            }
-
-            .posted-blogs p {
-                margin-bottom: 10px;
-                flex: 1;
-                text-align: left;
-
-            }
-
-
-
-
-            .posted-blogs button {
-                padding: 10px;
-                margin: 5px;
-                background: #007bff;
-                color: white;
-                border: none;
-                cursor: pointer;
-                border-radius: 4px;
-                width: 100px;
-                text-align: center !important;
-                align-self: center;
-
-
-            }
-
-            .posted-blogs div>* {
-                display: block;
-                margin: 7px;
-                padding: 3.5px;
-
-
-            }
-
-            footer {
-                background-color: rgb(28, 28, 63);
-            }
-
-            #Ic {
-                padding-top: 20px;
-                font-size: 30px;
-                color: white;
-            }
-
-            .icon-list {
-                list-style-type: none;
-                margin: 1rem 0;
-                display: flex;
-                gap: 1rem;
-            }
-
-            #table2 {
-                width: 100% !important;
-                padding-bottom: 20px !important;
-                margin: 0px !important;
-            }
-
-            #table2 .td,
-            .th {
-                font-family: 'Times New Roman', serif;
-                padding-left: 5%;
-                color: white !important;
-                font-weight: bold !important;
-            }
-
-            .td {
-                padding-left: 100px;
-                font-size: 18px !important;
-            }
-
-            .th {
-                font-size: 23px !important;
-            }
-
-            #signupName {
-                width: 400px;
-            }
-
-            #signupEmail {
-                width: 200px;
-            }
-
-            #signupPhoneNumber {
-                width: 190px;
-            }
-
-            #submit {
-                background-color: black;
-                color: white;
-                border: 0px;
-                border-radius: 10px;
-                font-size: 15px;
-                width: 72px;
-                margin-left: 20%;
-            }
-
-            .airplane-animation {
-                position: absolute;
-                top: 40%;
-                left: -10px;
-                transition: left 2s;
-                display: none;
-            }
-
-            .airplane-animate {
-                left: calc(100% + 100px);
-            }
-
-
-            @media (max-width: 768px) {
-                .img2-textbox {
-                    font-size: 16px;
-                    padding-left: 20px;
-                    width: 80%;
-                    bottom: 20px;
-                }
-
-                .col-xs-6 img {
-                    display: block;
-                    width: 210px;
-                }
-
-                .labelheader,
-                #Contacts {
-                    font-size: 20px !important;
-                }
-                #Topdestination {
-                    font-size: 20px !important;
-                }
-                #travelPlanerBtn {
-                    font-size: 20px !important;
-                }
-
-                #h1 {
-                    font-size: 35px;
-                    padding-left: 20px;
-                }
-
-                #p {
-                    font-size: 20px;
-                    padding-left: 20px;
-                }
-
-                #p2 {
-                    font-size: 16px;
-                    padding-left: 20px;
-                    width: 80%;
-                    margin-left: 10px;
-                }
-
-                .image-container {
-                    position: relative;
-
-                }
-
-                .image-container img {
-                    min-width: 180px;
-                    max-width: 180px;
-                    max-height: 300px;
-                    min-height: 300px;
-                    height: auto;
-                    display: block;
-                }
-
-                .image-label {
-                    position: absolute;
-                    top: 200px;
-                    left: 50px;
-                    color: white;
-                    border-radius: 5px;
-                    font-size: 40px;
-                    font-weight: bold;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                }
-
-            }
-
-            @media (max-width: 900px) {
-                .image-container {
-                    position: relative;
-
-                }
-
-                .image-container img {
-                    min-width: 250px;
-                    max-width: 250px;
-                    max-height: 400px;
-                    min-height: 400px;
-                    height: auto;
-                    display: block;
-                }
-
-                .image-label {
-                    position: absolute;
-                    top: 210px;
-                    left: 85px;
-                    color: white;
-                    border-radius: 5px;
-                    font-size: 50px;
-                    font-weight: bold;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                }
-            }
-
-            @media (max-width: 850px) {
-                .td {
-                    font-size: 12px !important;
-                }
-
-                #signupName {
-                    width: 240px;
-                }
-
-                #signupEmail {
-                    width: 120px;
-                }
-
-                #signupPhoneNumber {
-                    width: 119px;
-                }
-
-                #submit {
-                    font-size: 12px;
-                    margin-left: 12%;
-
-                }
-            }
-
-            @media (max-width: 800px) {
-
-                .td {
-                    font-size: 12px !important;
-                }
-
-                .th {
-                    font-size: 16px !important;
-                }
-
-                .col-xs-6 img {
-                    display: block;
-                    width: 210px;
-                }
-
-                .labelheader,
-                #Contacts, #Topdestination, #travelPlanerBtn {
-                    font-size: 20px !important;
-                }
-
-                #h1 {
-                    font-size: 35px;
-                    padding-left: 20px;
-                }
-
-                #p {
-                    font-size: 20px;
-                    padding-left: 20px;
-                }
-
-                #p2 {
-                    font-size: 16px;
-                    padding-left: 30px;
-                    width: 100%;
-                    margin-left: 10px;
-                }
-
-                .image-container {
-                    position: relative;
-
-                }
-
-                .image-container img {
-                    min-width: 220px;
-                    max-width: 220px;
-                    max-height: 320px;
-                    min-height: 320px;
-                    height: auto;
-                    display: block;
-                }
-
-                .image-label {
-                    position: absolute;
-                    top: 200px;
-                    left: 50px;
-                    color: white;
-                    border-radius: 5px;
-                    font-size: 40px;
-                    font-weight: bold;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                }
-            }
-
-            @media (max-width: 700px) {
-                #signupName {
-                    width: 240px;
-                }
-
-                #signupEmail {
-                    width: 120px;
-                }
-
-                #signupPhoneNumber {
-                    width: 119px;
-                }
-
-                #submit {
-                    font-size: 12px;
-                    margin-left: 12%;
-
-                }
-
-                .td {
-                    font-size: 12px !important;
-                }
-
-                .th {
-                    font-size: 16px !important;
-                }
-
-                .image-container {
-                    position: relative;
-
-                }
-
-                .image-container img {
-                    min-width: 180px;
-                    max-width: 180px;
-                    max-height: 300px;
-                    min-height: 300px;
-                    height: auto;
-                    display: block;
-                }
-
-                .image-label {
-                    position: absolute;
-                    top: 200px;
-                    left: 45px;
-                    color: white;
-                    border-radius: 5px;
-                    font-size: 40px;
-                    font-weight: bold;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                }
-
-                .col-xs-6 img {
-                    display: block;
-                    width: 30%;
-                    margin-left: 430px !important;
-                    margin-top: -44% !important;
-
-                }
-
-                .labelheader,
-                #Contacts , #Topdestination ,#travelPlanerBtn {
-                    font-size: 15px !important;
-                    margin-top: -60px !important;
-                }
-
-                #h1 {
-                    font-size: 27px;
-                    padding-left: 20px;
-                }
-
-                #p {
-                    font-size: 12px;
-                    padding-left: 20px;
-                }
-
-                #p2 {
-                    font-size: 12px;
-                    padding-left: 30px;
-                    width: 50%;
-                    margin-left: 10px;
-                }
-
-                .myTravelTable {
-                    width: 90% !important;
-                    margin-left: 5% !important;
-                }
-
-                .myTravelTable th,
-                .myTravelTable td {
-                    padding: 10px;
-                    font-size: 16px;
-
-                }
-
-                #td:first-child {
-                    width: 40% !important;
-                }
-
-                #td {
-                    padding: 10px 0;
-                    font-size: 16px;
-                }
-
-                #BookTrip {
-                    width: 70%;
-                    font-size: 15px;
-                }
-
-                #searchforcity {
-                    width: 50%;
-                    font-size: 15px;
-                }
-
-                .TopDestinations {
-                    margin-left: 80px;
-                    margin-top: 50px;
-
-                }
-            }
-
-            @media (max-width: 760px) {
-                .col-xs-6 img {
-                    display: block;
-                    width: 30%;
-                    margin-left: 470px !important;
-                    margin-top: -44% !important;
-
-                }
-
-                .labelheader,
-                #Contacts, #Topdestination, #travelPlanerBtn {
-                    font-size: 19px !important;
-                    margin-top: -60px !important;
-                }
-
-                #h1 {
-                    font-size: 32px;
-                    padding-left: 20px;
-                }
-
-                #p {
-                    font-size: 14px;
-                    padding-left: 20px;
-                }
-
-                #p2 {
-                    font-size: 15px;
-                    padding-left: 30px;
-                    width: 50%;
-                    margin-left: 10px;
-                }
-
-
-            }
-
-            @media (max-width: 576px) {
-                .img2-textbox {
-                    font-size: 10px;
-                    padding-left: 10px;
-                    width: 60%;
-                    height: 60%;
-                    bottom: 10px;
-                }
-
-                .col-xs-6 img {
-                    display: block;
-                    width: 30%;
-                    margin-left: 400px !important;
-                    margin-top: -44% !important;
-
-                }
-
-                #h1 {
-                    font-size: 27px;
-                    padding-left: 20px;
-                }
-
-                #p {
-                    font-size: 12px;
-                    padding-left: 20px;
-                }
-
-                #p2 {
-                    font-size: 12px;
-                    padding-left: 30px;
-                    width: 50%;
-                    margin-left: 10px;
-                }
-
-                .myTravelTable {
-                    width: 50% !important;
-                    margin-left: 1% !important;
-                }
-
-                .myTravelTable th {
-                    padding: 10px;
-                    font-size: 16px !important;
-                }
-
-                .myTravelTable td {
-                    padding: 10px;
-                    font-size: 11px !important;
-                }
-
-                #BookTrip {
-                    width: 80%;
-                    font-size: 15px;
-                }
-
-                #searchforcity {
-                    width: 50%;
-                    font-size: 15px;
-                }
-
-                #signupName {
-                    width: 170px;
-                }
-
-                #signupEmail {
-                    width: 85px;
-                }
-
-                #signupPhoneNumber {
-                    width: 84px;
-                }
-
-                #submit {
-                    font-size: 12px;
-                    margin-left: 12%;
-
-                }
-
-                #signupfeedback {
-                    width: 86px;
-                }
-
-                .image-container img {
-                    min-width: 150px;
-                    max-width: 150px;
-                    max-height: 290px;
-                    min-height: 290px;
-                    height: auto;
-                    display: block;
-                }
-
-                .image-label {
-                    position: absolute;
-                    top: 200px;
-                    left: 45px;
-                    color: white;
-                    border-radius: 5px;
-                    font-size: 40px;
-                    font-weight: bold;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                }
-
-            }
-
-            @media (max-width:1200px) {
-                .myTravelTable {
-                    width: 90% !important;
-                    margin-left: 5% !important;
-                }
-
-                .myTravelTable th,
-                .myTravelTable td {
-                    padding: 10px;
-                    font-size: 16px;
-
-                }
-
-                #td:first-child {
-                    width: 40% !important;
-                }
-
-                #td {
-                    padding: 10px 0;
-                    font-size: 16px;
-                }
-
-            }
+                       #login {
+                           background-color: rgb(28, 28, 63);
+                           border-radius: 10px;
+                           color: white;
+                           margin-top: 10%;
+                           font-family: 'Times New Roman', serif;
+                           display: flex;
+                           flex-wrap: wrap;
+                       }
+
+                       .loginForm {
+                           margin-left: 25%;
+                           margin-top: 10%;
+                           background-color: white;
+                           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                           width: 50%;
+                           height: 60%;
+                       }
+
+                       #username1 {
+                           margin-left: 20%;
+                           margin-top: 1%;
+                           width: 50%;
+                           border-radius: 10px;
+                           border-color: rgb(28, 28, 63);
+                       }
+
+                       #password {
+                           margin-left: 20%;
+                           margin-top: 1%;
+                           width: 50%;
+                           border-radius: 10px;
+                           border-color: rgb(28, 28, 63);
+                       }
+
+                       .label {
+                           font-size: 20px;
+                           font-family: 'Times New Roman', serif;
+                           margin-left: 20%;
+                       }
+
+                       #loginForm {
+                           margin-top: 10%;
+                       }
+
+                       #loginbtn {
+                           background-color: rgb(28, 28, 63);
+                           color: white;
+                           border-radius: 10px;
+                           margin-left: 40%;
+                           border: 0px;
+                           font-size: 20px;
+                           width: 20%;
+                           padding: 2px;
+                       }
+
+                       #h1 {
+                           font-size: 55px;
+                           padding-top: 70px;
+                           padding-left: 120px;
+                           font-family: Arial, Helvetica, sans-serif;
+                       }
+
+                       #p {
+                           font-size: 24px;
+                           font-family: Arial, Helvetica, sans-serif;
+                           padding-left: 170px;
+                           padding-top: 20px;
+                       }
+
+                       #p2 {
+                           background-color: rgb(28, 28, 63);
+                           color: white;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 20px;
+                           padding: 10px;
+                           border-radius: 10px;
+                           width: 90%;
+                           margin: 50px;
+                       }
+
+                       .header {
+                           height: 70px;
+                           padding-left: 20px;
+                           padding-right: 20px;
+                           align-items: center;
+                           border-bottom: 2px solid gray;
+                       }
+
+                       .labelheader {
+                           color: black;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 25px;
+                           padding: 10px 30px !important;
+                           font-weight: bold;
+                           cursor: pointer;
+                           position: relative;
+                           border: 1px #333 solid;
+                           border-radius: 10px;
+                           margin-left: 2% !important;
+                           min-width: 180px !important;     /* ensures wider clickable area */
+                       }
+
+                       #Contacts {
+                           color: black;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 25px;
+                           padding: 10px 20px;
+                           font-weight: bold;
+                           cursor: pointer;
+                           position: relative;
+                           border: 1px #333 solid;
+                           border-radius: 10px;
+                       }
+                       #Topdestination{
+                           color: black;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 25px;
+                         padding: 10 1px;
+                           font-weight: bold;
+                           cursor: pointer;
+                           position: relative;
+                           border: 1px #333 solid;
+                           border-radius: 10px;
+                              min-width: 250px !important;     /* ensures wider clickable area */
+                            text-align: center;
+                       }
+                   #TravelPlanerBtn{
+                        color: black;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 25px;
+                           padding: 10 20px;
+                           font-weight: bold;
+                           cursor: pointer;
+                           position: relative;
+                           border: 1px #333 solid;
+                           margin-bottom: 10px;
+                           border-radius: 10px;
+                           min-width: 200px;     /* ensures wider clickable area */
+                            text-align: center;
+
+                   }
+                       .labelheader:hover {
+                           background-color: rgb(28, 28, 63) !important;
+                           color: white;
+                       }
+
+                       #Contacts:hover {
+                           background-color: rgb(28, 28, 63) !important;
+                           color: white;
+                       }
+                         #TravelPlanerBtn:hover {
+                             background-color: rgb(28, 28, 63) !important;
+                             color: white;
+                         }
+                       #Topdestination:hover{
+                           background-color: rgb(28, 28, 63) !important;
+                           color: white;
+                       }
+
+                       .hide {
+                           display: none;
+                       }
+
+                       .img2-container {
+                           position: relative;
+                           display: inline-block;
+                           margin: 40px;
+                           margin-left: 10px auto;
+                           margin-right: auto;
+                           max-width: 80% !important;
+                       }
+
+                       .img2-container img {
+                           width: 100%;
+                           height: auto;
+                           border-radius: 10px;
+                       }
+
+                       .img2-textbox {
+                           position: absolute;
+                           background-color: white;
+                           color: rgb(28, 28, 63);
+                           padding: 15px;
+                           border-radius: 10px;
+                           bottom: 50px;
+                           left: 30px;
+                           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                           font-size: 20px;
+
+                       }
+
+                       .carousel-inner img {
+                           object-fit: cover;
+                           width: 90%;
+                           height: auto;
+
+                       }
+
+                       .carousel-inner {
+                           margin-left: 5% !important;
+                       }
+
+                       .howdoesitwork {
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           font-family: Arial, Helvetica, sans-serif;
+                           margin-top: 30px;
+                       }
+
+                       .smallparags {
+                           color: rgb(28, 28, 63);
+                           display: flex;
+                           justify-content: center;
+                           justify-content: space-around;
+                           align-items: center;
+                           font-size: 20px;
+                           padding: 20px;
+
+                       }
+
+                       .myTravelTable {
+                           width: 80%;
+                           margin-left: 10%;
+                       }
+
+                       .myTravelTable td {
+                           padding: 20px;
+                       }
+
+                       #TravelPlaner {
+                           padding: 15px;
+                           font-size: 25px;
+                           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           text-align: center;
+                           border: 1px solid gray;
+                       }
+
+                       #td {
+                           padding: 15px 0;
+                           font-size: 20px;
+
+                       }
+
+                       #td:first-child {
+                           width: 50% !important;
+                       }
+
+                       .TopDestinations {
+                           margin-left: 300px;
+                           margin-top: 50px;
+
+                       }
+
+                       .labelTopDestinations {
+                           font-size: 50px;
+                           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                       }
+
+                       .containerdestinations {
+                           text-align: center;
+
+                       }
+
+                       .containerdestinations img {
+                           margin: 20px;
+                           border-radius: 10px;
+                       }
+
+                       .containerdestinations img {
+                           margin: 20px;
+                           border-radius: 10px;
+                           transition: transform 0.3s ease;
+                       }
+
+                       .containerdestinations img:hover {
+                           transform: scale(1.1);
+                       }
+
+                       .imagecity {
+                           display: flex;
+                           flex-direction: row;
+                           justify-content: space-around;
+                       }
+
+                       .image-container {
+                           position: relative;
+
+                       }
+
+                       .image-container img {
+                           min-width: 300px;
+                           max-width: 300px;
+                           max-height: 400px;
+                           height: auto;
+                           display: block;
+                       }
+
+                       .image-label {
+                           position: absolute;
+                           top: 250px;
+                           left: 105px;
+                           color: white;
+                           border-radius: 5px;
+                           font-size: 60px;
+                           font-weight: bold;
+                           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                       }
+
+                       #searchforcity {
+                           background-color: rgb(28, 28, 63);
+                           color: white;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 20px;
+                           padding: 8px;
+                           border-radius: 10px;
+                           width: 40%;
+                           transition: background-color 0.1s ease, transform 0.1s ease;
+                       }
+
+                       #searchforcity:hover {
+                           background-color: rgb(8, 8, 63);
+                           transform: scale(1.05);/
+                       }
+
+                       #BookTrip {
+                           background-color: rgb(28, 28, 63);
+                           color: white;
+                           font-family: Arial, Helvetica, sans-serif;
+                           font-size: 20px;
+                           padding: 8px;
+                           border-radius: 10px;
+                           width: 60%;
+                           transition: background-color 0.1s ease, transform 0.1s ease;
+                       }
+
+                       #BookTrip:hover {
+                           background-color: rgb(8, 8, 63);
+                           transform: scale(1.05);/
+                       }
+
+                       .PostACityLabel {
+                           font-size: 50px;
+                           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           position: absolute;
+                           color: black;
+                           font-weight: bold;
+                           margin: 20px;
+                           margin-left: 20%;
+                       }
+
+
+                       #journeyForm {
+                           display: flex;
+                           flex-direction: column;
+                           gap: 15px;
+                       }
+
+                       #journeyForm label {
+                           font-weight: bold;
+                           font-size: 18px;
+                       }
+
+                       #journeyForm input,
+                       #journeyForm button {
+                           padding: 10px;
+                           font-size: 16px;
+                           border: 1px solid #ccc;
+                           border-radius: 4px;
+                           background-color: #f8f8f8;
+                           width: calc(100% - 22px);
+                       }
+
+                       #journeyForm input[type="text"] {
+                           height: 40px;
+                       }
+
+                       #journeyForm input[type="text"]:focus {
+                           outline: none;
+                           border-color: rgb(8, 8, 63);
+                       }
+
+                       #journeyForm button {
+                           padding: 10px;
+                           background: rgb(8, 8, 63);
+                           color: white;
+                           border: none;
+                           cursor: pointer;
+                           border-radius: 10px;
+                           transition: background-color 0.3s;
+                       }
+
+                       #journeyForm button:hover {
+                           background-color: rgb(28, 28, 63);
+                       }
+
+                       .posted-blogs {
+                           max-width: 80%;
+                           width: 100%;
+                           margin-left: 10%;
+                           margin-top: -40px;
+                       }
+
+                       .posted-blogs h2 {
+                           text-align: center;
+                           font-size: 24px;
+                           margin-bottom: 15px;
+                       }
+
+                       .posted-blogs div {
+                           background: white;
+                           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                           padding: 9px;
+                           margin-bottom: 15px;
+                           border-radius: 8px;
+                           box-shadow: 0px 0px 10px rgb(5, 5, 5);
+                           display: flex;
+                           flex-direction: row;
+                           align-items: flex-start;
+                           flex-wrap: wrap;
+                       }
+
+                       .posted-blogs img {
+                           width: 200px;
+                           height: 200px;
+                           border-radius: 4px;
+                           margin-right: 20px;
+                           margin-left: 30px;
+                       }
+
+                       .posted-blogs p {
+                           margin-bottom: 10px;
+                           flex: 1;
+                           text-align: left;
+
+                       }
+
+
+
+
+                       .posted-blogs button {
+                           padding: 10px;
+                           margin: 5px;
+                           background: #007bff;
+                           color: white;
+                           border: none;
+                           cursor: pointer;
+                           border-radius: 4px;
+                           width: 100px;
+                           text-align: center !important;
+                           align-self: center;
+
+
+                       }
+
+                       .posted-blogs div>* {
+                           display: block;
+                           margin: 7px;
+                           padding: 3.5px;
+
+
+                       }
+
+                       footer {
+                           background-color: rgb(28, 28, 63);
+                       }
+
+                       #Ic {
+                           padding-top: 20px;
+                           font-size: 30px;
+                           color: white;
+                       }
+
+                       .icon-list {
+                           list-style-type: none;
+                           margin: 1rem 0;
+                           display: flex;
+                           gap: 1rem;
+                       }
+
+                       #table2 {
+                           width: 100% !important;
+                           padding-bottom: 20px !important;
+                           margin: 0px !important;
+                       }
+
+                       #table2 .td,
+                       .th {
+                           font-family: 'Times New Roman', serif;
+                           padding-left: 5%;
+                           color: white !important;
+                           font-weight: bold !important;
+                       }
+
+                       .td {
+                           padding-left: 100px;
+                           font-size: 18px !important;
+                       }
+
+                       .th {
+                           font-size: 23px !important;
+                       }
+
+                       #signupName {
+                           width: 400px;
+                       }
+
+                       #signupEmail {
+                           width: 200px;
+                       }
+
+                       #signupPhoneNumber {
+                           width: 190px;
+                       }
+
+                       #submit {
+                           background-color: black;
+                           color: white;
+                           border: 0px;
+                           border-radius: 10px;
+                           font-size: 15px;
+                           width: 72px;
+                           margin-left: 20%;
+                       }
+
+                       .airplane-animation {
+                           position: absolute;
+                           top: 40%;
+                           left: -10px;
+                           transition: left 2s;
+                           display: none;
+                       }
+
+                       .airplane-animate {
+                           left: calc(100% + 100px);
+                       }
+       .form-header {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 15px; /* Space between icon and heading */
+           margin-bottom: 20px;
+       }
+
+       .form-icon {
+           width: 50px; /* Adjust icon size */
+           height: 50px;
+       }
+
+       h2 {
+           font-family: 'Times New Roman', serif;
+           color: rgb(28, 28, 63);
+           font-size: 2rem;
+           margin: 0;
+       }
+
+       input {
+           width: 80%;
+           padding: 10px;
+           margin: 10px 0;
+           border-radius: 8px;
+           border: 1px solid rgb(200, 200, 200);
+           font-size: 1rem;
+       }
+
+       .form-btn {
+           background-color: rgb(28, 28, 63);
+           color: white;
+           border: none;
+           border-radius: 8px;
+           padding: 10px 20px;
+           font-size: 1.1rem;
+           cursor: pointer;
+           margin-top: 10px;
+           width: 50%;
+       }
+
+       .form-btn:hover {
+           background-color: rgb(50, 50, 100);
+       }
+
+       .toggle-btn {
+           margin-top: 10px;
+           background: none;
+           border: none;
+           color: rgb(28, 28, 63);
+           cursor: pointer;
+           text-decoration: underline;
+           font-size: 0.95rem;
+       }
+
+       .form-containerLogin, .form-container ,.form-containerSignup {
+           max-width: 400px;
+           padding: 30px 20px;
+           margin: 50px auto;
+           background-color: white;
+           border-radius: 12px;
+           box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+           text-align: center;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+
+       #signupName{
+         width: 100%;
+       }
+      #signupEmail, #signupUsername, #signupPassword, #loginUsername, #loginPassword {
+         width: 100%;
+      }
+                       @media (max-width: 768px) {
+                           .img2-textbox {
+                               font-size: 16px;
+                               padding-left: 20px;
+                               width: 80%;
+                               bottom: 20px;
+                           }
+
+                           .col-xs-6 img {
+                               display: block;
+                               width: 210px;
+                           }
+
+                           .labelheader,
+                           #Contacts {
+                               font-size: 20px !important;
+                           }
+                           #Topdestination {
+                               font-size: 20px !important;
+                           }
+                           #travelPlanerBtn {
+                               font-size: 20px !important;
+                           }
+
+                           #h1 {
+                               font-size: 35px;
+                               padding-left: 20px;
+                           }
+
+                           #p {
+                               font-size: 20px;
+                               padding-left: 20px;
+                           }
+
+                           #p2 {
+                               font-size: 16px;
+                               padding-left: 20px;
+                               width: 80%;
+                               margin-left: 10px;
+                           }
+
+                           .image-container {
+                               position: relative;
+
+                           }
+
+                           .image-container img {
+                               min-width: 180px;
+                               max-width: 180px;
+                               max-height: 300px;
+                               min-height: 300px;
+                               height: auto;
+                               display: block;
+                           }
+
+                           .image-label {
+                               position: absolute;
+                               top: 200px;
+                               left: 50px;
+                               color: white;
+                               border-radius: 5px;
+                               font-size: 40px;
+                               font-weight: bold;
+                               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           }
+
+                       }
+
+                       @media (max-width: 900px) {
+                           .image-container {
+                               position: relative;
+
+                           }
+
+                           .image-container img {
+                               min-width: 250px;
+                               max-width: 250px;
+                               max-height: 400px;
+                               min-height: 400px;
+                               height: auto;
+                               display: block;
+                           }
+
+                           .image-label {
+                               position: absolute;
+                               top: 210px;
+                               left: 85px;
+                               color: white;
+                               border-radius: 5px;
+                               font-size: 50px;
+                               font-weight: bold;
+                               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           }
+                       }
+
+                       @media (max-width: 850px) {
+                           .td {
+                               font-size: 12px !important;
+                           }
+
+                           #signupName {
+                               width: 240px;
+                           }
+
+                           #signupEmail {
+                               width: 120px;
+                           }
+
+                           #signupPhoneNumber {
+                               width: 119px;
+                           }
+
+                           #submit {
+                               font-size: 12px;
+                               margin-left: 12%;
+
+                           }
+                       }
+
+                       @media (max-width: 800px) {
+
+                           .td {
+                               font-size: 12px !important;
+                           }
+
+                           .th {
+                               font-size: 16px !important;
+                           }
+
+                           .col-xs-6 img {
+                               display: block;
+                               width: 210px;
+                           }
+
+                           .labelheader,
+                           #Contacts, #Topdestination, #travelPlanerBtn {
+                               font-size: 20px !important;
+                           }
+
+                           #h1 {
+                               font-size: 35px;
+                               padding-left: 20px;
+                           }
+
+                           #p {
+                               font-size: 20px;
+                               padding-left: 20px;
+                           }
+
+                           #p2 {
+                               font-size: 16px;
+                               padding-left: 30px;
+                               width: 100%;
+                               margin-left: 10px;
+                           }
+
+                           .image-container {
+                               position: relative;
+
+                           }
+
+                           .image-container img {
+                               min-width: 220px;
+                               max-width: 220px;
+                               max-height: 320px;
+                               min-height: 320px;
+                               height: auto;
+                               display: block;
+                           }
+
+                           .image-label {
+                               position: absolute;
+                               top: 200px;
+                               left: 50px;
+                               color: white;
+                               border-radius: 5px;
+                               font-size: 40px;
+                               font-weight: bold;
+                               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           }
+                       }
+
+                       @media (max-width: 700px) {
+                           #signupName {
+                               width: 240px;
+                           }
+
+                           #signupEmail {
+                               width: 120px;
+                           }
+
+                           #signupPhoneNumber {
+                               width: 119px;
+                           }
+
+                           #submit {
+                               font-size: 12px;
+                               margin-left: 12%;
+
+                           }
+
+                           .td {
+                               font-size: 12px !important;
+                           }
+
+                           .th {
+                               font-size: 16px !important;
+                           }
+
+                           .image-container {
+                               position: relative;
+
+                           }
+
+                           .image-container img {
+                               min-width: 180px;
+                               max-width: 180px;
+                               max-height: 300px;
+                               min-height: 300px;
+                               height: auto;
+                               display: block;
+                           }
+
+                           .image-label {
+                               position: absolute;
+                               top: 200px;
+                               left: 45px;
+                               color: white;
+                               border-radius: 5px;
+                               font-size: 40px;
+                               font-weight: bold;
+                               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           }
+
+                           .col-xs-6 img {
+                               display: block;
+                               width: 30%;
+                               margin-left: 430px !important;
+                               margin-top: -44% !important;
+
+                           }
+
+                           .labelheader,
+                           #Contacts , #Topdestination ,#travelPlanerBtn {
+                               font-size: 15px !important;
+                               margin-top: -60px !important;
+                           }
+
+                           #h1 {
+                               font-size: 27px;
+                               padding-left: 20px;
+                           }
+
+                           #p {
+                               font-size: 12px;
+                               padding-left: 20px;
+                           }
+
+                           #p2 {
+                               font-size: 12px;
+                               padding-left: 30px;
+                               width: 50%;
+                               margin-left: 10px;
+                           }
+
+                           .myTravelTable {
+                               width: 90% !important;
+                               margin-left: 5% !important;
+                           }
+
+                           .myTravelTable th,
+                           .myTravelTable td {
+                               padding: 10px;
+                               font-size: 16px;
+
+                           }
+
+                           #td:first-child {
+                               width: 40% !important;
+                           }
+
+                           #td {
+                               padding: 10px 0;
+                               font-size: 16px;
+                           }
+
+                           #BookTrip {
+                               width: 70%;
+                               font-size: 15px;
+                           }
+
+                           #searchforcity {
+                               width: 50%;
+                               font-size: 15px;
+                           }
+
+                           .TopDestinations {
+                               margin-left: 80px;
+                               margin-top: 50px;
+
+                           }
+                       }
+
+                       @media (max-width: 760px) {
+                           .col-xs-6 img {
+                               display: block;
+                               width: 30%;
+                               margin-left: 470px !important;
+                               margin-top: -44% !important;
+
+                           }
+
+                           .labelheader,
+                           #Contacts, #Topdestination, #travelPlanerBtn {
+                               font-size: 19px !important;
+                               margin-top: -60px !important;
+                           }
+
+                           #h1 {
+                               font-size: 32px;
+                               padding-left: 20px;
+                           }
+
+                           #p {
+                               font-size: 14px;
+                               padding-left: 20px;
+                           }
+
+                           #p2 {
+                               font-size: 15px;
+                               padding-left: 30px;
+                               width: 50%;
+                               margin-left: 10px;
+                           }
+
+
+                       }
+
+                       @media (max-width: 576px) {
+                           .img2-textbox {
+                               font-size: 10px;
+                               padding-left: 10px;
+                               width: 60%;
+                               height: 60%;
+                               bottom: 10px;
+                           }
+
+                           .col-xs-6 img {
+                               display: block;
+                               width: 30%;
+                               margin-left: 400px !important;
+                               margin-top: -44% !important;
+
+                           }
+
+                           #h1 {
+                               font-size: 27px;
+                               padding-left: 20px;
+                           }
+
+                           #p {
+                               font-size: 12px;
+                               padding-left: 20px;
+                           }
+
+                           #p2 {
+                               font-size: 12px;
+                               padding-left: 30px;
+                               width: 50%;
+                               margin-left: 10px;
+                           }
+
+                           .myTravelTable {
+                               width: 50% !important;
+                               margin-left: 1% !important;
+                           }
+
+                           .myTravelTable th {
+                               padding: 10px;
+                               font-size: 16px !important;
+                           }
+
+                           .myTravelTable td {
+                               padding: 10px;
+                               font-size: 11px !important;
+                           }
+
+                           #BookTrip {
+                               width: 80%;
+                               font-size: 15px;
+                           }
+
+                           #searchforcity {
+                               width: 50%;
+                               font-size: 15px;
+                           }
+
+                           #signupName {
+                               width: 170px;
+                           }
+
+                           #signupEmail {
+                               width: 85px;
+                           }
+
+                           #signupPhoneNumber {
+                               width: 84px;
+                           }
+
+                           #submit {
+                               font-size: 12px;
+                               margin-left: 12%;
+
+                           }
+
+                           #signupfeedback {
+                               width: 86px;
+                           }
+
+                           .image-container img {
+                               min-width: 150px;
+                               max-width: 150px;
+                               max-height: 290px;
+                               min-height: 290px;
+                               height: auto;
+                               display: block;
+                           }
+
+                           .image-label {
+                               position: absolute;
+                               top: 200px;
+                               left: 45px;
+                               color: white;
+                               border-radius: 5px;
+                               font-size: 40px;
+                               font-weight: bold;
+                               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                           }
+
+                       }
+
+                       @media (max-width:1200px) {
+                           .myTravelTable {
+                               width: 90% !important;
+                               margin-left: 5% !important;
+                           }
+
+                           .myTravelTable th,
+                           .myTravelTable td {
+                               padding: 10px;
+                               font-size: 16px;
+
+                           }
+
+                           #td:first-child {
+                               width: 40% !important;
+                           }
+
+                           #td {
+                               padding: 10px 0;
+                               font-size: 16px;
+                           }
+
+                       }
+                         @media(max-width: 500px){
+               .form-container , .form-containerLogin, .form-containerSignup {
+                 width: 90%;
+                 padding: 20px;
+               }
+
+               .form-container h2 , .form-containerLogin h2, .form-containerSignup h2{
+                 font-size: 24px;
+               }
+             }
     </style>
   </head>
 
   <body>
-    <div class="loginForm">
-      <div id="login" class="col-md-12 d-flex">
-        <img src="images/travel.icon.png" style="width: 10%" />
-        <h1>Login</h1>
+    <div class="form-containerLogin" id="loginFormContainer">
+      <div class="form-header">
+        <img src="images/travel.icon.png" alt="Travel Icon" class="form-icon" />
+        <h2>Login</h2>
       </div>
-      <form id="loginForm">
-        <label for="Username" class="label">Username:</label><br />
-        <input type="text" id="username1" /><br />
-        <label for="password" class="label">Password:</label><br />
-        <input type="password" id="password" />
-      </form>
-      <button id="loginbtn" onclick="login()">Login</button>
+
+      <input type="text" id="loginUsername" placeholder="Username" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="login()" class="form-btn">Login</button>
+      <button class="toggle-btn" onclick="toggleForms()">
+        Don't have an account? Sign Up
+      </button>
     </div>
+
+    <div
+      class="form-containerSignup"
+      id="signupFormContainer"
+      style="display: none"
+    >
+      <div class="form-header">
+        <img src="images/travel.icon.png" alt="Travel Icon" class="form-icon" />
+        <h2>Sign Up</h2>
+      </div>
+
+      <input type="text" id="signupName" placeholder="Full Name" />
+      <input type="email" id="signupEmail" placeholder="Email" />
+      <input type="text" id="signupUsername" placeholder="Username" />
+      <input type="password" id="signupPassword" placeholder="Password" />
+      <button onclick="signup()" class="form-btn">Sign Up</button>
+      <button class="toggle-btn" onclick="toggleForms()">
+        Already have an account? Login
+      </button>
+    </div>
+
     <div id="mypage">
       <div class="header row">
         <div class="logotitle col-md-8 d-flex align-items-center">
@@ -1462,50 +1553,121 @@
   </body>
   <script>
     $("#mypage").hide();
+    function signup() {
+      let name = document.getElementById("signupName").value.trim();
+      let email = document.getElementById("signupEmail").value.trim();
+      let username = document.getElementById("signupUsername").value.trim();
+      let password = document.getElementById("signupPassword").value.trim();
+
+      // Basic validation
+      if (name === "" || email === "" || username === "" || password === "") {
+        alert("All fields are required!");
+        if (name === "")
+          document.getElementById("signupName").style.border = "2px solid red";
+        else
+          document.getElementById("signupName").style.border = "1px solid #ccc";
+
+        if (email === "")
+          document.getElementById("signupEmail").style.border = "2px solid red";
+        else
+          document.getElementById("signupEmail").style.border =
+            "1px solid #ccc";
+
+        if (username === "")
+          document.getElementById("signupUsername").style.border =
+            "2px solid red";
+        else
+          document.getElementById("signupUsername").style.border =
+            "1px solid #ccc";
+
+        if (password === "")
+          document.getElementById("signupPassword").style.border =
+            "2px solid red";
+        else
+          document.getElementById("signupPassword").style.border =
+            "1px solid #ccc";
+
+        return;
+      }
+
+      // Success: store the credentials in localStorage (for demo purposes)
+      localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
+      localStorage.setItem("name", name);
+      localStorage.setItem("email", email);
+
+      alert("Sign Up successful! Please log in.");
+
+      // Clear signup fields
+      document.getElementById("signupName").value = "";
+      document.getElementById("signupEmail").value = "";
+      document.getElementById("signupUsername").value = "";
+      document.getElementById("signupPassword").value = "";
+
+      // Switch to login form
+      toggleForms();
+    }
+    $("#postedform").addClass("hide");
+    $("#listing").addClass("hide");
+
+    // Updated login function to check against signed up user
     function login() {
-      let username = document.getElementById("username1").value.trim();
-      let password = document.getElementById("password").value.trim();
-      if (username == "" && password == "") {
+      let username = document.getElementById("loginUsername").value.trim();
+      let password = document.getElementById("loginPassword").value.trim();
+
+      if (username === "" && password === "") {
         alert("Username and Password are required");
-        document.getElementById("username1").style.border = "2px solid red";
-        document.getElementById("password").style.border = "2px solid red";
-      } else if (username == "") {
+        document.getElementById("loginUsername").style.border = "2px solid red";
+        document.getElementById("loginPassword").style.border = "2px solid red";
+        return;
+      } else if (username === "") {
         alert("Username is required");
-        document.getElementById("username1").style.border = "2px solid red";
-        document.getElementById("password").style.border =
+        document.getElementById("loginUsername").style.border = "2px solid red";
+        document.getElementById("loginPassword").style.border =
           "2px solid rgb(28, 28, 63)";
-      } else if (password == "") {
+        return;
+      } else if (password === "") {
         alert("Password is required");
-        document.getElementById("username1").style.border =
+        document.getElementById("loginUsername").style.border =
           "2px solid rgb(28, 28, 63)";
-        document.getElementById("password").style.border = "2px solid red";
-      } else if (username.toLowerCase() !== "admin") {
-        $("#postedform").toggleClass("hide");
-        $("#listing").toggleClass("hide");
-        document.getElementById("username1").style.border =
-          " 2px solid rgb(28, 28, 63)";
-        document.getElementById("password").style.border =
-          "2px solid rgb(28, 28, 63)";
+        document.getElementById("loginPassword").style.border = "2px solid red";
+        return;
+      }
+
+      let storedUsername = localStorage.getItem("username");
+      let storedPassword = localStorage.getItem("password");
+
+      if (username === "admin" && password === "admin") {
+        // Admin login
         $("#mypage").show();
-        $(".loginForm").hide();
+        $(".form-containerLogin").hide();
+        $("#postedform").removeClass("hide");
+        $("#listing").removeClass("hide");
       } else if (
-        username.toLowerCase() == "admin" &&
-        password.toLowerCase() == "admin"
+        username === storedUsername &&
+        password === storedPassword &&
+        username !== "admin"
       ) {
-        document.getElementById("username1").style.border =
-          " 2px solid rgb(28, 28, 63)";
-        document.getElementById("password").style.border =
-          "2px solid rgb(28, 28, 63)";
         $("#mypage").show();
-        $(".loginForm").hide();
-      } else if (
-        username.toLowerCase() == "admin" &&
-        password.toLowerCase() !== "admin"
-      ) {
+        $(".form-containerLogin").hide();
+        $("#postedform").addClass("hide"); // hide for non-admin
+        $("#listing").addClass("hide");
+      } else if (username === "admin" && password !== "admin") {
         alert("Password is wrong for Admin");
-        document.getElementById("password").style.border = "2px solid red";
+        document.getElementById("loginPassword").style.border = "2px solid red";
+      } else {
+        alert("Username or Password is incorrect");
+        document.getElementById("loginUsername").style.border = "2px solid red";
+        document.getElementById("loginPassword").style.border = "2px solid red";
       }
     }
+
+    // Toggle between login and signup forms
+    function toggleForms() {
+      $("#loginFormContainer").toggle();
+      $("#signupFormContainer").toggle();
+    }
+
     function animateAirplane() {
       var airplane = document.getElementById("airplane");
       airplane.classList.toggle("airplane-animate");

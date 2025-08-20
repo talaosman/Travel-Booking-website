@@ -1,0 +1,1811 @@
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+            #login {
+                background-color: rgb(28, 28, 63);
+                border-radius: 10px;
+                color: white;
+                margin-top: 10%;
+                font-family: 'Times New Roman', serif;
+            }
+
+            .loginForm {
+                margin-left: 25%;
+                margin-top: 10%;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 50%;
+                height: 60%;
+            }
+
+            #username1 {
+                margin-left: 20%;
+                margin-top: 1%;
+                width: 50%;
+                border-radius: 10px;
+                border-color: rgb(28, 28, 63);
+            }
+
+            #password {
+                margin-left: 20%;
+                margin-top: 1%;
+                width: 50%;
+                border-radius: 10px;
+                border-color: rgb(28, 28, 63);
+            }
+
+            .label {
+                font-size: 20px;
+                font-family: 'Times New Roman', serif;
+                margin-left: 20%;
+            }
+
+            #loginForm {
+                margin-top: 10%;
+            }
+
+            #loginbtn {
+                background-color: rgb(28, 28, 63);
+                color: white;
+                border-radius: 10px;
+                margin-left: 40%;
+                border: 0px;
+                font-size: 20px;
+                width: 20%;
+                padding: 2px;
+            }
+
+            #h1 {
+                font-size: 55px;
+                padding-top: 70px;
+                padding-left: 120px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #p {
+                font-size: 24px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-left: 170px;
+                padding-top: 20px;
+            }
+
+            #p2 {
+                background-color: rgb(28, 28, 63);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                width: 90%;
+                margin: 50px;
+            }
+
+            .header {
+                height: 70px;
+                padding-left: 20px;
+                padding-right: 20px;
+                align-items: center;
+                border-bottom: 2px solid gray;
+            }
+
+            .labelheader {
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                padding: 10px 30px !important;
+                font-weight: bold;
+                cursor: pointer;
+                position: relative;
+                border: 1px #333 solid;
+                border-radius: 10px;
+                margin-left: 2% !important;
+                min-width: 180px !important;     /* ensures wider clickable area */
+            }
+
+            #Contacts {
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                padding: 10px 20px;
+                font-weight: bold;
+                cursor: pointer;
+                position: relative;
+                border: 1px #333 solid;
+                border-radius: 10px;
+            }
+            #Topdestination{
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+              padding: 10 1px;
+                font-weight: bold;
+                cursor: pointer;
+                position: relative;
+                border: 1px #333 solid;
+                border-radius: 10px;
+                   min-width: 250px !important;     /* ensures wider clickable area */
+                 text-align: center;
+            }
+        #TravelPlanerBtn{
+             color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                padding: 10 20px;
+                font-weight: bold;
+                cursor: pointer;
+                position: relative;
+                border: 1px #333 solid;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                min-width: 200px;     /* ensures wider clickable area */
+                 text-align: center;
+
+        }
+            .labelheader:hover {
+                background-color: rgb(28, 28, 63) !important;
+                color: white;
+            }
+
+            #Contacts:hover {
+                background-color: rgb(28, 28, 63) !important;
+                color: white;
+            }
+              #TravelPlanerBtn:hover {
+                  background-color: rgb(28, 28, 63) !important;
+                  color: white;
+              }
+            #Topdestination:hover{
+                background-color: rgb(28, 28, 63) !important;
+                color: white;
+            }
+
+            .hide {
+                display: none;
+            }
+
+            .img2-container {
+                position: relative;
+                display: inline-block;
+                margin: 40px;
+                margin-left: 10px auto;
+                margin-right: auto;
+                max-width: 80% !important;
+            }
+
+            .img2-container img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .img2-textbox {
+                position: absolute;
+                background-color: white;
+                color: rgb(28, 28, 63);
+                padding: 15px;
+                border-radius: 10px;
+                bottom: 50px;
+                left: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+
+            }
+
+            .carousel-inner img {
+                object-fit: cover;
+                width: 90%;
+                height: auto;
+
+            }
+
+            .carousel-inner {
+                margin-left: 5% !important;
+            }
+
+            .howdoesitwork {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 30px;
+            }
+
+            .smallparags {
+                color: rgb(28, 28, 63);
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 20px;
+                padding: 20px;
+
+            }
+
+            .myTravelTable {
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            .myTravelTable td {
+                padding: 20px;
+            }
+
+            #TravelPlaner {
+                padding: 15px;
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                border: 1px solid gray;
+            }
+
+            #td {
+                padding: 15px 0;
+                font-size: 20px;
+
+            }
+
+            #td:first-child {
+                width: 50% !important;
+            }
+
+            .TopDestinations {
+                margin-left: 300px;
+                margin-top: 50px;
+
+            }
+
+            .labelTopDestinations {
+                font-size: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+
+            .containerdestinations {
+                text-align: center;
+
+            }
+
+            .containerdestinations img {
+                margin: 20px;
+                border-radius: 10px;
+            }
+
+            .containerdestinations img {
+                margin: 20px;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            .containerdestinations img:hover {
+                transform: scale(1.1);
+            }
+
+            .imagecity {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .image-container {
+                position: relative;
+
+            }
+
+            .image-container img {
+                min-width: 300px;
+                max-width: 300px;
+                max-height: 400px;
+                height: auto;
+                display: block;
+            }
+
+            .image-label {
+                position: absolute;
+                top: 250px;
+                left: 105px;
+                color: white;
+                border-radius: 5px;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            #searchforcity {
+                background-color: rgb(28, 28, 63);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                padding: 8px;
+                border-radius: 10px;
+                width: 40%;
+                transition: background-color 0.1s ease, transform 0.1s ease;
+            }
+
+            #searchforcity:hover {
+                background-color: rgb(8, 8, 63);
+                transform: scale(1.05);/
+            }
+
+            #BookTrip {
+                background-color: rgb(28, 28, 63);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                padding: 8px;
+                border-radius: 10px;
+                width: 60%;
+                transition: background-color 0.1s ease, transform 0.1s ease;
+            }
+
+            #BookTrip:hover {
+                background-color: rgb(8, 8, 63);
+                transform: scale(1.05);/
+            }
+
+            .PostACityLabel {
+                font-size: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: absolute;
+                color: black;
+                font-weight: bold;
+                margin: 20px;
+                margin-left: 20%;
+            }
+
+            .form-container {
+                color: black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 100px auto;
+                padding: 20px;
+                max-width: 600px;
+                width: 90%;
+                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 8px;
+                background-color: white;
+            }
+
+            #journeyForm {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            #journeyForm label {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            #journeyForm input,
+            #journeyForm button {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                width: calc(100% - 22px);
+            }
+
+            #journeyForm input[type="text"] {
+                height: 40px;
+            }
+
+            #journeyForm input[type="text"]:focus {
+                outline: none;
+                border-color: rgb(8, 8, 63);
+            }
+
+            #journeyForm button {
+                padding: 10px;
+                background: rgb(8, 8, 63);
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: background-color 0.3s;
+            }
+
+            #journeyForm button:hover {
+                background-color: rgb(28, 28, 63);
+            }
+
+            .posted-blogs {
+                max-width: 80%;
+                width: 100%;
+                margin-left: 10%;
+                margin-top: -40px;
+            }
+
+            .posted-blogs h2 {
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .posted-blogs div {
+                background: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                padding: 9px;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgb(5, 5, 5);
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .posted-blogs img {
+                width: 200px;
+                height: 200px;
+                border-radius: 4px;
+                margin-right: 20px;
+                margin-left: 30px;
+            }
+
+            .posted-blogs p {
+                margin-bottom: 10px;
+                flex: 1;
+                text-align: left;
+
+            }
+
+
+
+
+            .posted-blogs button {
+                padding: 10px;
+                margin: 5px;
+                background: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 100px;
+                text-align: center !important;
+                align-self: center;
+
+
+            }
+
+            .posted-blogs div>* {
+                display: block;
+                margin: 7px;
+                padding: 3.5px;
+
+
+            }
+
+            footer {
+                background-color: rgb(28, 28, 63);
+            }
+
+            #Ic {
+                padding-top: 20px;
+                font-size: 30px;
+                color: white;
+            }
+
+            .icon-list {
+                list-style-type: none;
+                margin: 1rem 0;
+                display: flex;
+                gap: 1rem;
+            }
+
+            #table2 {
+                width: 100% !important;
+                padding-bottom: 20px !important;
+                margin: 0px !important;
+            }
+
+            #table2 .td,
+            .th {
+                font-family: 'Times New Roman', serif;
+                padding-left: 5%;
+                color: white !important;
+                font-weight: bold !important;
+            }
+
+            .td {
+                padding-left: 100px;
+                font-size: 18px !important;
+            }
+
+            .th {
+                font-size: 23px !important;
+            }
+
+            #signupName {
+                width: 400px;
+            }
+
+            #signupEmail {
+                width: 200px;
+            }
+
+            #signupPhoneNumber {
+                width: 190px;
+            }
+
+            #submit {
+                background-color: black;
+                color: white;
+                border: 0px;
+                border-radius: 10px;
+                font-size: 15px;
+                width: 72px;
+                margin-left: 20%;
+            }
+
+            .airplane-animation {
+                position: absolute;
+                top: 40%;
+                left: -10px;
+                transition: left 2s;
+                display: none;
+            }
+
+            .airplane-animate {
+                left: calc(100% + 100px);
+            }
+
+
+            @media (max-width: 768px) {
+                .img2-textbox {
+                    font-size: 16px;
+                    padding-left: 20px;
+                    width: 80%;
+                    bottom: 20px;
+                }
+
+                .col-xs-6 img {
+                    display: block;
+                    width: 210px;
+                }
+
+                .labelheader,
+                #Contacts {
+                    font-size: 20px !important;
+                }
+                #Topdestination {
+                    font-size: 20px !important;
+                }
+                #travelPlanerBtn {
+                    font-size: 20px !important;
+                }
+
+                #h1 {
+                    font-size: 35px;
+                    padding-left: 20px;
+                }
+
+                #p {
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+
+                #p2 {
+                    font-size: 16px;
+                    padding-left: 20px;
+                    width: 80%;
+                    margin-left: 10px;
+                }
+
+                .image-container {
+                    position: relative;
+
+                }
+
+                .image-container img {
+                    min-width: 180px;
+                    max-width: 180px;
+                    max-height: 300px;
+                    min-height: 300px;
+                    height: auto;
+                    display: block;
+                }
+
+                .image-label {
+                    position: absolute;
+                    top: 200px;
+                    left: 50px;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+            }
+
+            @media (max-width: 900px) {
+                .image-container {
+                    position: relative;
+
+                }
+
+                .image-container img {
+                    min-width: 250px;
+                    max-width: 250px;
+                    max-height: 400px;
+                    min-height: 400px;
+                    height: auto;
+                    display: block;
+                }
+
+                .image-label {
+                    position: absolute;
+                    top: 210px;
+                    left: 85px;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 50px;
+                    font-weight: bold;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            }
+
+            @media (max-width: 850px) {
+                .td {
+                    font-size: 12px !important;
+                }
+
+                #signupName {
+                    width: 240px;
+                }
+
+                #signupEmail {
+                    width: 120px;
+                }
+
+                #signupPhoneNumber {
+                    width: 119px;
+                }
+
+                #submit {
+                    font-size: 12px;
+                    margin-left: 12%;
+
+                }
+            }
+
+            @media (max-width: 800px) {
+
+                .td {
+                    font-size: 12px !important;
+                }
+
+                .th {
+                    font-size: 16px !important;
+                }
+
+                .col-xs-6 img {
+                    display: block;
+                    width: 210px;
+                }
+
+                .labelheader,
+                #Contacts, #Topdestination, #travelPlanerBtn {
+                    font-size: 20px !important;
+                }
+
+                #h1 {
+                    font-size: 35px;
+                    padding-left: 20px;
+                }
+
+                #p {
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+
+                #p2 {
+                    font-size: 16px;
+                    padding-left: 30px;
+                    width: 100%;
+                    margin-left: 10px;
+                }
+
+                .image-container {
+                    position: relative;
+
+                }
+
+                .image-container img {
+                    min-width: 220px;
+                    max-width: 220px;
+                    max-height: 320px;
+                    min-height: 320px;
+                    height: auto;
+                    display: block;
+                }
+
+                .image-label {
+                    position: absolute;
+                    top: 200px;
+                    left: 50px;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            }
+
+            @media (max-width: 700px) {
+                #signupName {
+                    width: 240px;
+                }
+
+                #signupEmail {
+                    width: 120px;
+                }
+
+                #signupPhoneNumber {
+                    width: 119px;
+                }
+
+                #submit {
+                    font-size: 12px;
+                    margin-left: 12%;
+
+                }
+
+                .td {
+                    font-size: 12px !important;
+                }
+
+                .th {
+                    font-size: 16px !important;
+                }
+
+                .image-container {
+                    position: relative;
+
+                }
+
+                .image-container img {
+                    min-width: 180px;
+                    max-width: 180px;
+                    max-height: 300px;
+                    min-height: 300px;
+                    height: auto;
+                    display: block;
+                }
+
+                .image-label {
+                    position: absolute;
+                    top: 200px;
+                    left: 45px;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+                .col-xs-6 img {
+                    display: block;
+                    width: 30%;
+                    margin-left: 430px !important;
+                    margin-top: -44% !important;
+
+                }
+
+                .labelheader,
+                #Contacts , #Topdestination ,#travelPlanerBtn {
+                    font-size: 15px !important;
+                    margin-top: -60px !important;
+                }
+
+                #h1 {
+                    font-size: 27px;
+                    padding-left: 20px;
+                }
+
+                #p {
+                    font-size: 12px;
+                    padding-left: 20px;
+                }
+
+                #p2 {
+                    font-size: 12px;
+                    padding-left: 30px;
+                    width: 50%;
+                    margin-left: 10px;
+                }
+
+                .myTravelTable {
+                    width: 90% !important;
+                    margin-left: 5% !important;
+                }
+
+                .myTravelTable th,
+                .myTravelTable td {
+                    padding: 10px;
+                    font-size: 16px;
+
+                }
+
+                #td:first-child {
+                    width: 40% !important;
+                }
+
+                #td {
+                    padding: 10px 0;
+                    font-size: 16px;
+                }
+
+                #BookTrip {
+                    width: 70%;
+                    font-size: 15px;
+                }
+
+                #searchforcity {
+                    width: 50%;
+                    font-size: 15px;
+                }
+
+                .TopDestinations {
+                    margin-left: 80px;
+                    margin-top: 50px;
+
+                }
+            }
+
+            @media (max-width: 760px) {
+                .col-xs-6 img {
+                    display: block;
+                    width: 30%;
+                    margin-left: 470px !important;
+                    margin-top: -44% !important;
+
+                }
+
+                .labelheader,
+                #Contacts, #Topdestination, #travelPlanerBtn {
+                    font-size: 19px !important;
+                    margin-top: -60px !important;
+                }
+
+                #h1 {
+                    font-size: 32px;
+                    padding-left: 20px;
+                }
+
+                #p {
+                    font-size: 14px;
+                    padding-left: 20px;
+                }
+
+                #p2 {
+                    font-size: 15px;
+                    padding-left: 30px;
+                    width: 50%;
+                    margin-left: 10px;
+                }
+
+
+            }
+
+            @media (max-width: 576px) {
+                .img2-textbox {
+                    font-size: 10px;
+                    padding-left: 10px;
+                    width: 60%;
+                    height: 60%;
+                    bottom: 10px;
+                }
+
+                .col-xs-6 img {
+                    display: block;
+                    width: 30%;
+                    margin-left: 400px !important;
+                    margin-top: -44% !important;
+
+                }
+
+                #h1 {
+                    font-size: 27px;
+                    padding-left: 20px;
+                }
+
+                #p {
+                    font-size: 12px;
+                    padding-left: 20px;
+                }
+
+                #p2 {
+                    font-size: 12px;
+                    padding-left: 30px;
+                    width: 50%;
+                    margin-left: 10px;
+                }
+
+                .myTravelTable {
+                    width: 50% !important;
+                    margin-left: 1% !important;
+                }
+
+                .myTravelTable th {
+                    padding: 10px;
+                    font-size: 16px !important;
+                }
+
+                .myTravelTable td {
+                    padding: 10px;
+                    font-size: 11px !important;
+                }
+
+                #BookTrip {
+                    width: 80%;
+                    font-size: 15px;
+                }
+
+                #searchforcity {
+                    width: 50%;
+                    font-size: 15px;
+                }
+
+                #signupName {
+                    width: 170px;
+                }
+
+                #signupEmail {
+                    width: 85px;
+                }
+
+                #signupPhoneNumber {
+                    width: 84px;
+                }
+
+                #submit {
+                    font-size: 12px;
+                    margin-left: 12%;
+
+                }
+
+                #signupfeedback {
+                    width: 86px;
+                }
+
+                .image-container img {
+                    min-width: 150px;
+                    max-width: 150px;
+                    max-height: 290px;
+                    min-height: 290px;
+                    height: auto;
+                    display: block;
+                }
+
+                .image-label {
+                    position: absolute;
+                    top: 200px;
+                    left: 45px;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+            }
+
+            @media (max-width:1200px) {
+                .myTravelTable {
+                    width: 90% !important;
+                    margin-left: 5% !important;
+                }
+
+                .myTravelTable th,
+                .myTravelTable td {
+                    padding: 10px;
+                    font-size: 16px;
+
+                }
+
+                #td:first-child {
+                    width: 40% !important;
+                }
+
+                #td {
+                    padding: 10px 0;
+                    font-size: 16px;
+                }
+
+            }
+    </style>
+  </head>
+
+  <body>
+    <div class="loginForm">
+      <div id="login" class="col-md-12 d-flex">
+        <img src="images/travel.icon.png" style="width: 10%" />
+        <h1>Login</h1>
+      </div>
+      <form id="loginForm">
+        <label for="Username" class="label">Username:</label><br />
+        <input type="text" id="username1" /><br />
+        <label for="password" class="label">Password:</label><br />
+        <input type="password" id="password" />
+      </form>
+      <button id="loginbtn" onclick="login()">Login</button>
+    </div>
+    <div id="mypage">
+      <div class="header row">
+        <div class="logotitle col-md-8 d-flex align-items-center">
+          <img src="images/travel.icon.png" width="60px" />
+          <label class="labeltitle">SkyWing </label>
+        </div>
+        <div
+          class="col-md-4 col-sm-12 d-flex align-items-center justify-content-end"
+        >
+          <label id="TravelPlanerBtn" class="me-2 ms-2">Travel Planer</label>
+          <label id="Topdestination" class="me-2 ms-2"> Top Destinations</label>
+          <label id="listing" class="labelheader me-1">Post City</label>
+          <label id="Contacts" class="me-1 ms-1">Contact</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <h1 id="h1">Journey To Explore The World</h1>
+          <p id="p">
+            Pick from The Cities we offer travel To and we'll take care of the
+            rest!<br />While ensuring your safesty and happiness along the way!
+          </p>
+          <p id="p2">
+            Save 10% or more on over 100,000 hotels with Member Prices. Also,
+            members save up to 30% when you add a hotel to a flight
+          </p>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <img
+            src="images/ADDITIN-IMG1.jpg"
+            width="300px"
+            style="border-radius: 10px; margin-top: 30px"
+          />
+        </div>
+      </div>
+      <div class="img2-container col-xs-12 col-md-8">
+        <img
+          src="images/img2-containerimg.jpg"
+          width="900px"
+          style="border-radius: 10px"
+        />
+        <div class="img2-textbox">
+          Summer packages<br />
+          save you up to 19%
+          <div class="descrp">
+            <br />Whether you're craving the beach, luxury, or<br />
+            something else, bundle your flight and hotel to <br />save.
+          </div>
+          <button class="button1">Sign Up And Save</button>
+        </div>
+      </div>
+      <div class="howdoesitwork">
+        <label class="titleHowDoesItWork">How does it work?</label>
+      </div>
+      <div class="smallparags">
+        <p>Choose from a variety of cities<br />and destinations we offer.</p>
+        <p>Book your journey and <br />let us take care of the rest!</p>
+        <p>Select your preferred <br />travel dates and times.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="myTravelTable">
+            <thead>
+              <tr>
+                <th colspan="3" id="TravelPlaner">Travel Planer</th>
+              </tr>
+              <tr>
+                <td colspan="3" style="width: 80%; text-align: center">
+                  <select
+                    id="countrySelect"
+                    onchange="populateCities()"
+                    style="width: 35%"
+                  >
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                    <option value="Japan">Japan</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Australia">Australia</option>
+                    <option value="United Arab Emirates">
+                      United Arab Emirates
+                    </option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="China">China</option>
+                  </select>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="td" style="width: 33%">
+                  <div class="customSelect">
+                    <select id="select">
+                      <option value="">Select a city or Search</option>
+                      <option value="new-york">
+                        New York - The city that never sleeps
+                      </option>
+                      <option value="paris">Paris - The city of love</option>
+                      <option value="tokyo">
+                        Tokyo - The bustling metropolis
+                      </option>
+                      <option value="london">
+                        London - The historic capital
+                      </option>
+                      <option value="rome">Rome - The eternal city</option>
+                      <option value="sydney">Sydney - The harbor city</option>
+                      <option value="dubai">Dubai - The city of luxury</option>
+                      <option value="rio">
+                        Rio de Janeiro - The marvelous city
+                      </option>
+                      <option value="singapore">
+                        Singapore - The lion city
+                      </option>
+                      <option value="hong-kong">
+                        Hong Kong - The vibrant city
+                      </option>
+                    </select>
+                  </div>
+                </td>
+                <td style="width: 33%">
+                  <div class="custom-date" id="td">
+                    <input type="date" id="date" name="date" />
+                  </div>
+                </td>
+                <td id="td" style="width: 33%">
+                  <select id="travelersCount">
+                    <option value="">NB:Travelers</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="td" style="width: 33%">
+                  <input
+                    type="text"
+                    id="citySearch"
+                    placeholder="Search for a city..."
+                    style="width: 65%; padding: 5px"
+                  />
+                </td>
+                <td id="td" style="width: 33%">
+                  <button id="searchforcity">Search</button>
+                </td>
+                <td id="td" style="width: 33%">
+                  <button id="BookTrip">Book Trip</button>
+                  <img
+                    id="airplane"
+                    src="images/travel.icon.png"
+                    class="airplane-animation"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/turkey.jpg"
+              alt="turkey"
+              width="1100"
+              height="500 !important"
+            />
+            <div class="carousel-caption" style="margin-left: -10%">
+              <h3>Turkey</h3>
+              <p>We had such a great time in Turkey!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/africa.jpg"
+              alt="africa"
+              width="1100"
+              height="500 !important"
+            />
+            <div class="carousel-caption" style="margin-left: -10%">
+              <h3>Africa</h3>
+              <p>Here I am where I belong!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/maldive.jpg"
+              alt="maldive"
+              width="1100"
+              height="500 !important"
+            />
+            <div class="carousel-caption" style="margin-left: -10%">
+              <h3>Maldive</h3>
+              <p>Paradise found in the Maldives!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/haw.jpg"
+              alt="Hawaii "
+              width="1100"
+              height="500 !important"
+            />
+            <div class="carousel-caption" style="margin-left: -10%">
+              <h3>Hawaii</h3>
+              <p>Sea you in Hawaii!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/london.jpg"
+              alt="London "
+              width="1100"
+              height="500 !important"
+            />
+            <div class="carousel-caption" style="margin-left: -10%">
+              <h3>London</h3>
+              <p>All I need is London!</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="TopDestinations">
+        <label class="labelTopDestinations">Top Destinations</label>
+      </div>
+      <div id="containerdestinations" class="containerdestinations">
+        <div class="imagecity">
+          <div class="image-container">
+            <img
+              src="images/Paris.jpg"
+              alt="paris"
+              style="border-radius: 10px"
+            />
+            <span class="image-label">Paris</span>
+          </div>
+          <div class="image-container">
+            <img
+              src="images/Greece.jpg"
+              alt="Greece"
+              style="border-radius: 10px"
+            />
+            <span class="image-label">Santo<br />Rini</span>
+          </div>
+          <div class="image-container">
+            <img
+              src="images/NewYork.jpg"
+              alt="new-york"
+              style="border-radius: 10px"
+            />
+            <span class="image-label">New<br />York</span>
+          </div>
+        </div>
+        <div class="imagecity">
+          <div class="image-container">
+            <img
+              src="images/Dubai.jpg"
+              alt="Dubai"
+              style="border-radius: 10px"
+            />
+            <span class="image-label">Dubai</span>
+          </div>
+          <div class="image-container">
+            <img
+              src="images/Tokyo.jpg"
+              alt="Tokyo"
+              style="border-radius: 10px"
+            />
+            <span class="image-label">Tokyo</span>
+          </div>
+          <div class="image-container">
+            <img
+              src="images/0518aed6003ca69b6ed03824787ee188.jpg"
+              alt="Cape-town"
+              style="border-radius: 10px"
+            />
+            <span class="image-label">Cape<br />Town</span>
+          </div>
+        </div>
+      </div>
+      <div id="postedform">
+        <div id="POST"><label class="PostACityLabel">Post A City</label></div>
+        <br />
+        <div class="form-container">
+          <form id="journeyForm">
+            <label for="imageURL">Image URL:</label>
+            <input type="text" id="imageURL" name="imageURL" required />
+
+            <label for="destination">City name:</label>
+            <input type="text" id="destination" name="destination" required />
+            <label for="Country">Country:</label>
+            <input type="text" id="Country" name="Country" required />
+            <label for="population">Population:</label>
+            <input type="text" id="population" name="population" required />
+            <label for="places"
+              >Enter places to visit separated by commas:</label
+            >
+            <input type="text" id="places" />
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <button type="button" onclick="submitJourney()">Submit</button>
+          </form>
+        </div>
+        <div class="posted-blogs">
+          <h2>Personal Posted Blogs</h2>
+          <button
+            onclick=" ShowAll()"
+            style="
+              width: 200px;
+              font-size: 20px;
+              background-color: rgb(28, 28, 63);
+              font-family: Arial, Helvetica, sans-serif;
+              padding: 5px;
+              border-radius: 10px;
+              color: white;
+            "
+          >
+            Show All Cities
+          </button>
+          <div id="postedBlogs"></div>
+        </div>
+      </div>
+      <footer>
+        <div id="Ic">
+          <ul class="primaryColor icon-list">
+            <li class="icon"><i class="fab fa-google fa-xl"></i></li>
+            <li class="icon"><i class="fab fa-facebook fa-xl"></i></li>
+            <li class="icon"><i class="fab fa-instagram fa-xl"></i></li>
+          </ul>
+        </div>
+        <div class="table-responsive">
+          <table id="table2">
+            <tr>
+              <th class="th">CONTACT US</th>
+              <th class="th">ADDITIONAL LINKS</th>
+              <th class="th">CONTACT</th>
+            </tr>
+            <tr>
+              <td class="td">
+                123 Second Street Fifth<br />
+                Avenue,<br />
+                Manhattan, New York<br />
+                +987 654 3210<br />
+              </td>
+              <td class="td">
+                About us<br />
+                Terms and conditions<br />
+                Privacy policy<br />
+                News<br />
+                Contact us<br />
+              </td>
+              <td class="td">
+                <form id="signupForm" class="form-cont">
+                  <br /><input
+                    id="signupName"
+                    class="inp primaryColor"
+                    type="text"
+                    placeholder="Name:"
+                    autocomplete="off"
+                    required
+                  />
+                  <br /><br />
+                  <input
+                    id="signupEmail"
+                    class="inp primaryColor"
+                    type="email"
+                    placeholder="Email:"
+                    autocomplete="off"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    id="signupPhoneNumber"
+                    name="phone"
+                    placeholder="12-345-678"
+                    pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}"
+                    required
+                  /><br /><br />
+                  <input
+                    id="signupfeedback"
+                    class="inp primaryColor"
+                    type="text"
+                    placeholder="your feedback:"
+                    required
+                  />
+                  <button id="submit" type="submit">SEND</button>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    $("#mypage").hide();
+    function login() {
+      let username = document.getElementById("username1").value.trim();
+      let password = document.getElementById("password").value.trim();
+      if (username == "" && password == "") {
+        alert("Username and Password are required");
+        document.getElementById("username1").style.border = "2px solid red";
+        document.getElementById("password").style.border = "2px solid red";
+      } else if (username == "") {
+        alert("Username is required");
+        document.getElementById("username1").style.border = "2px solid red";
+        document.getElementById("password").style.border =
+          "2px solid rgb(28, 28, 63)";
+      } else if (password == "") {
+        alert("Password is required");
+        document.getElementById("username1").style.border =
+          "2px solid rgb(28, 28, 63)";
+        document.getElementById("password").style.border = "2px solid red";
+      } else if (username.toLowerCase() !== "admin") {
+        $("#postedform").toggleClass("hide");
+        $("#listing").toggleClass("hide");
+        document.getElementById("username1").style.border =
+          " 2px solid rgb(28, 28, 63)";
+        document.getElementById("password").style.border =
+          "2px solid rgb(28, 28, 63)";
+        $("#mypage").show();
+        $(".loginForm").hide();
+      } else if (
+        username.toLowerCase() == "admin" &&
+        password.toLowerCase() == "admin"
+      ) {
+        document.getElementById("username1").style.border =
+          " 2px solid rgb(28, 28, 63)";
+        document.getElementById("password").style.border =
+          "2px solid rgb(28, 28, 63)";
+        $("#mypage").show();
+        $(".loginForm").hide();
+      } else if (
+        username.toLowerCase() == "admin" &&
+        password.toLowerCase() !== "admin"
+      ) {
+        alert("Password is wrong for Admin");
+        document.getElementById("password").style.border = "2px solid red";
+      }
+    }
+    function animateAirplane() {
+      var airplane = document.getElementById("airplane");
+      airplane.classList.toggle("airplane-animate");
+      airplane.style.display = "block";
+    }
+    document
+      .getElementById("BookTrip")
+      .addEventListener("click", animateAirplane);
+    function getRandomNumber() {
+      return Math.floor(Math.random() * 2);
+    }
+    function populateCities() {
+      const countrySelect = document.getElementById("countrySelect");
+      const selectedCountry = countrySelect.value;
+      const citySelect = document.getElementById("select");
+      citySelect.innerHTML = "";
+
+      switch (selectedCountry) {
+        case "USA":
+          addCityOption("new-york", "New York - The city that never sleeps");
+          break;
+        case "France":
+          addCityOption("paris", "Paris - The city of love");
+          break;
+        case "United Kingdom":
+          addCityOption("london", "London - The historic capital");
+          break;
+        case "Japan":
+          addCityOption("tokyo", "Tokyo - The bustling metropolis");
+          break;
+        case "Italy":
+          addCityOption("rome", "Rome - The eternal city");
+          break;
+        case "Australia":
+          addCityOption("sydney", "Sydney - The harbor city");
+          break;
+        case "United Arab Emirates":
+          addCityOption("dubai", "Dubai - The city of luxury");
+          break;
+        case "Brazil":
+          addCityOption(
+            "rio de janeiro",
+            "Rio de Janeiro - The marvelous city"
+          );
+          break;
+        case "Singapore":
+          addCityOption("singapore", "Singapore - The lion city");
+          break;
+        case "China":
+          addCityOption("hong kong", "Hong Kong - The vibrant city");
+          break;
+        default:
+          addCityOption("", "Select a city or Search");
+          addCityOption("new-york", "New York - The city that never sleeps");
+          addCityOption("paris", "Paris - The city of love");
+          addCityOption("london", "London - The historic capital");
+          addCityOption("tokyo", "Tokyo - The bustling metropolis");
+          addCityOption("rome", "Rome - The eternal city");
+          addCityOption("sydney", "Sydney - The harbor city");
+          addCityOption("dubai", "Dubai - The city of luxury");
+          addCityOption(
+            "rio de janeiro",
+            "Rio de Janeiro - The marvelous city"
+          );
+          addCityOption("singapore", "Singapore - The lion city");
+          addCityOption("hong kong", "Hong Kong - The vibrant city");
+          break;
+      }
+    }
+
+    function addCityOption(value, label) {
+      const citySelect = document.getElementById("select");
+      const option = document.createElement("option");
+      option.value = value;
+      option.text = label;
+      citySelect.add(option);
+    }
+    const selectElement = document.getElementById("select");
+
+    let citiesArray = [];
+    for (let i = 0; i < selectElement.options.length; i++) {
+      citiesArray.push(selectElement.options[i].value);
+    }
+    console.log(citiesArray);
+    function searchCity() {
+      let date = document.getElementById("date").value;
+      let nboftravel = document.getElementById("travelersCount").value;
+      const userInput = document
+        .getElementById("citySearch")
+        .value.toLowerCase();
+      const cityExists = citiesArray.includes(userInput);
+      const randomNumber = getRandomNumber();
+      if (date === "" || nboftravel === "NB:Travelers") {
+        alert("Date and Number of travel are required!");
+      } else {
+        if (cityExists && randomNumber == 0) {
+          alert(
+            `City "${userInput}" exists in our list! and Trips are available`
+          );
+          document.getElementById("date").value = "";
+          document.getElementById("travelersCount").selectedIndex = 0;
+          document.getElementById("citySearch").value = "";
+        } else if (cityExists && randomNumber == 1) {
+          alert(
+            `City "${userInput}" exists in our list but Trips arn't available `
+          );
+          document.getElementById("date").value = "";
+          document.getElementById("travelersCount").selectedIndex = 0;
+          document.getElementById("citySearch").value = "";
+        } else {
+          alert(
+            `City "${userInput}" does not exists in our list! Post this city!`
+          );
+        }
+        document.getElementById("date").value = "";
+        document.getElementById("travelersCount").selectedIndex = 0;
+        document.getElementById("citySearch").value = "";
+      }
+    }
+    document
+      .getElementById("searchforcity")
+      .addEventListener("click", searchCity);
+
+    function scrollToPostCityForm() {
+      const formContainer = document.querySelector("#POST");
+      formContainer.scrollIntoView({ behavior: "smooth" });
+    }
+    document
+      .getElementById("listing")
+      .addEventListener("click", scrollToPostCityForm);
+
+    function scrollToContact() {
+      const formContainer = document.querySelector("footer");
+      formContainer.scrollIntoView({ behavior: "smooth" });
+    }
+    document
+      .getElementById("Contacts")
+      .addEventListener("click", scrollToContact);
+
+    function scrollToDestination() {
+      const formContainer = document.querySelector(".TopDestinations");
+      formContainer.scrollIntoView({ behavior: "smooth" });
+    }
+    document
+      .getElementById("Topdestination")
+      .addEventListener("click", scrollToDestination);
+
+    function scrollToTravelPlaner() {
+      const formContainer = document.querySelector("#TravelPlaner");
+      formContainer.scrollIntoView({ behavior: "smooth" });
+    }
+    document
+      .getElementById("TravelPlanerBtn")
+      .addEventListener("click", scrollToTravelPlaner);
+
+    function submitJourney() {
+      let imageURL = document.getElementById("imageURL").value;
+      let destination = document.getElementById("destination").value;
+      let Country = document.getElementById("Country").value;
+      let population = document.getElementById("population").value;
+      let places = document.getElementById("places").value;
+      let username = document.getElementById("username").value;
+
+      if (
+        imageURL === "" ||
+        destination === "" ||
+        Country === "" ||
+        population === "" ||
+        places === "" ||
+        username === ""
+      ) {
+        alert("Fields are required");
+      } else {
+        let city = destination.toLowerCase();
+        if (!citiesArray.includes(city)) {
+          citiesArray.push(city);
+        }
+        let selectElement = document.getElementById("select");
+        let newOption = document.createElement("option");
+        newOption.value = city;
+        newOption.text = city;
+        selectElement.appendChild(newOption);
+        let journey = {
+          imageURL,
+          destination,
+          Country,
+          population,
+          places,
+          username,
+        };
+
+        saveJourney(journey);
+
+        renderPostedBlogs(Country.toLowerCase());
+
+        document.getElementById("journeyForm").reset();
+      }
+    }
+
+    function saveJourney(journey) {
+      let savedJourneys = JSON.parse(localStorage.getItem("journeys")) || [];
+      savedJourneys.push(journey);
+      localStorage.setItem("journeys", JSON.stringify(savedJourneys));
+    }
+    function renderPostedBlogs(country = null) {
+      let postedBlogsContainer = document.getElementById("postedBlogs");
+      let savedJourneys = JSON.parse(localStorage.getItem("journeys")) || [];
+
+      postedBlogsContainer.innerHTML = "";
+
+      savedJourneys.forEach((journey) => {
+        if (
+          !country ||
+          journey.Country.toLowerCase() === country.toLowerCase()
+        ) {
+          let placesList = journey.places
+            .split(",")
+            .map((place) => `<li>${place.trim()}</li>`)
+            .join("");
+
+          let blogDiv = document.createElement("div");
+          blogDiv.innerHTML = `<img src="${journey.imageURL}" alt="${journey.destination}" />
+                         <h1>${journey.destination}</h1>
+                         <p>Country: ${journey.Country}</p>
+                         <p>Population: ${journey.population}</p>
+                         <p>Places to visit:</p>
+                         <ul style="padding-left:20px;">${placesList}</ul>
+                         <p>User: ${journey.username}</p>
+                     <button onclick="comfirmdelete('${journey.destination}')">Remove</button>`;
+
+          postedBlogsContainer.appendChild(blogDiv);
+        }
+      });
+    }
+    function ShowAll() {
+      renderPostedBlogs();
+    }
+    function comfirmdelete(destination) {
+      const sent = confirm("Are you sure you want to delete?");
+      if (sent) {
+        removeBlog(destination);
+      }
+    }
+    function removeBlog(destination) {
+      let savedJourneys = JSON.parse(localStorage.getItem("journeys")) || [];
+      let removedCountry = null;
+      savedJourneys = savedJourneys.filter((journey) => {
+        if (journey.destination === destination) {
+          removedCountry = journey.Country.toLowerCase();
+          return false;
+        }
+        return true;
+      });
+      localStorage.setItem("journeys", JSON.stringify(savedJourneys));
+      citiesArray = savedJourneys.map((journey) =>
+        journey.destination.toLowerCase()
+      );
+      const selectElement = document.getElementById("select");
+      const options = selectElement.options;
+      for (let i = 0; i < options.length; i++) {
+        if (options[i].value.toLowerCase() === destination.toLowerCase()) {
+          selectElement.remove(i);
+          break;
+        }
+      }
+      renderPostedBlogs(removedCountry);
+    }
+
+    document.getElementById("signupForm").addEventListener("submit", sendEmail);
+    function sendEmail() {
+      var subject = "User Inquiry";
+      var email = document.getElementById("signupEmail").value;
+      var recipient = email;
+
+      var number = document.getElementById("signupPhoneNumber").value;
+      var name = document.getElementById("signupName").value;
+
+      var msg = document.getElementById("").value;
+      var mailtoLink =
+        "mailto:" +
+        recipient +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(
+          "User Email: " +
+            email +
+            "\n\nMessage: " +
+            msg +
+            "\n\nName: " +
+            name +
+            "\n\nPhone: " +
+            number
+        );
+      window.location.href = mailtoLink;
+      alert("Send  successfully!");
+      document.getElementById("signupEmail").value = "";
+      document.getElementById("signupPhoneNumber").value = "";
+      document.getElementById("signupName").value = "";
+      document.getElementById("signupfeedback").value = "";
+    }
+  </script>
+</html>
